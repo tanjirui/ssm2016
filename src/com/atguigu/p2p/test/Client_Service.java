@@ -38,7 +38,7 @@ public class Client_Service
 		ApplicationContext ctx = new ClassPathXmlApplicationContext("applicationContext.xml");
 		Client_Service t = (Client_Service)ctx.getBean("client_Service");
 		
-		/*for (int i = 16; i <17; i++) 
+		for (int i = 16; i <17; i++) 
 		{
 			CustomerModel cm = new CustomerModel();
 			cm.setCustomerId("cid"+RandomUtils.nextInt());
@@ -49,7 +49,7 @@ public class Client_Service
 			
 			t.getServiceT().create(cm);
 		}
-		*/
+		
 		CustomerQueryModel cqm = new CustomerQueryModel();
 		cqm.getPage().setNowPage(3);
 		cqm.getPage().setPageShow(10);
